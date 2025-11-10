@@ -1,6 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
-import { Menu } from 'lucide-react';
+import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 const languages = [
@@ -14,7 +13,6 @@ export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
   const [hoveredLang, setHoveredLang] = useState<string | null>(null);
   const [isLangButtonHovered, setIsLangButtonHovered] = useState(false);
-  const [isDownloadHovered, setIsDownloadHovered] = useState(false);
 
   const styles = {
     header: {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
@@ -52,7 +52,7 @@ const MainRoutes: React.FC = () => {
         className="main-content-layout"
         style={{
           minHeight: '100vh',
-          background: 'var(--color-bg-main)',
+          background: 'var(--color-bg-secondary)',
           transition: 'margin-left 0.35s cubic-bezier(.4,0,.2,1)',
           marginLeft: isMobile ? 0 : `max(${sidebarWidth}px, 0px)`,
           display: 'flex',
@@ -60,7 +60,7 @@ const MainRoutes: React.FC = () => {
         }}
       >
         <Header />
-        <main style={{ flex: 1, padding: '2rem', background: 'var(--color-bg-main)', transition: 'background var(--transition-main)' }}>
+        <main style={{ flex: 1, padding: '2rem', background: 'var(--color-bg-secondary)', transition: 'background var(--transition-main)' }}>
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/playwright" element={<Playwright />} />

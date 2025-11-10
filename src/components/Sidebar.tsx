@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
-import { 
-  LayoutDashboard, 
+import {
+  LayoutDashboard,
   Menu,
   X,
-  User,
   ChevronRight,
   Mail,
   Phone,
-  ChevronLeft
+  ChevronLeft,
+  GraduationCap
 } from 'lucide-react';
 
 export default function Sidebar() {
@@ -23,17 +23,18 @@ export default function Sidebar() {
 
   const sidebarOptions = [
     { label: t('sidebar.dashboard'), path: '/dashboard', icon: LayoutDashboard },
+    { label: t('sidebar.mentoria'), path: '/mentoria', icon: GraduationCap },
     { label: t('sidebar.appium'), path: '/appium' },
     { label: t('sidebar.cypress'), path: '/cypress' },
     { label: t('sidebar.karatebdd'), path: '/karate-bdd' },
-    { label: t('sidebar.mentoria'), path: '/mentoria' },
     { label: t('sidebar.playwright'), path: '/playwright' },
     { label: t('sidebar.selenium'), path: '/selenium' },
   ];
 
   const sortedOptions = [
-    sidebarOptions[0],
-    ...sidebarOptions.slice(1).sort((a, b) => a.label.localeCompare(b.label)),
+    sidebarOptions[0], // Dashboard
+    sidebarOptions[1], // Mentoria
+    ...sidebarOptions.slice(2).sort((a, b) => a.label.localeCompare(b.label)),
   ];
 
   useEffect(() => {
@@ -203,7 +204,7 @@ export default function Sidebar() {
             
             return (
               <React.Fragment key={opt.path}>
-                {idx === 1 && (
+                {(idx === 2) && (
                   <div className="my-3 mx-2 border-t" style={{ borderColor: '#e2e8f0' }} />
                 )}
                 <motion.button

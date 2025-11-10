@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Github, BookOpen, Copy, CheckCircle, Terminal, FileCode, Folder, Play, AlertCircle, Package, Settings } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
