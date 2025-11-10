@@ -1,0 +1,39 @@
+/*
+  Paleta de colores y variables para modo claro y oscuro
+  Se utiliza CSS custom properties para fácil integración con Tailwind o CSS-in-JS
+*/
+:root {
+  --color-primary: #1b527c;
+  --color-secondary: #55bff3;
+  --color-bg-main: #f8fafc;
+  --color-bg-secondary: #e2e8f0;
+  --color-text-main: #111827;
+  --color-text-secondary: #6b7280;
+  --color-border: #cbd5e1;
+  --color-success: #16a34a;
+  --color-danger: #dc2626;
+  --color-warning: #facc15;
+  --color-info: #3b82f6;
+  --color-accent-1: #9333ea;
+  --color-accent-2: #f97316;
+  --sidebar-gradient: linear-gradient(135deg, #1b527c 0%, #55bff3 100%);
+  --transition-main: 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+[data-theme="dark"] {
+  --color-bg-main: #111827;
+  --color-bg-secondary: #1e293b;
+  --color-text-main: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-border: #334155;
+}
+
+html, body {
+  background: var(--color-bg-main);
+  color: var(--color-text-main);
+  transition: background var(--transition-main), color var(--transition-main);
+}
+
+* {
+  box-sizing: border-box;
+}
