@@ -200,7 +200,7 @@ export default function Header() {
             </div>
             {/* Botón descargar CV */}
             <a
-              href="/assets/JoseRodrigo_EscutiaRios_CV.docx"
+              href="/assets/JoseRodrigo_EscutiaRios_CV_profesional.pdf"
               style={{
                 padding: '0.5rem 1rem',
                 borderRadius: '0.5rem',
