@@ -469,7 +469,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
       'mentoria.appium.topic5': 'Page Object Model para aplicaciones móviles',
       'mentoria.appium.topic6': 'Integración con frameworks (TestNG, Cucumber)',
       'mentoria.appium.topic7': 'Testing paralelo en múltiples dispositivos',
-      
+
       // Topics - AI
       'mentoria.ai.topic1': 'Introducción a IA/ML en QA Automation',
       'mentoria.ai.topic2': 'Generación automática de tests con IA (ChatGPT, Claude)',
@@ -478,13 +478,6 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
       'mentoria.ai.topic5': 'Análisis predictivo de fallos en tests',
       'mentoria.ai.topic6': 'Optimización de test suites con ML',
       'mentoria.ai.topic7': 'Herramientas: Testim, Mabl, Applitools, Functionize',
-      
-      // Playwright
-      'playwright.title': 'Playwright',
-      'playwright.content': 'Sección básica de Playwright. Agrega aquí tu contenido.',
-      'playwright.subtitle': 'Automatización de pruebas con Playwright + TypeScript + POM + Reportes',
-      'playwright.tab.github': 'Descarga desde GitHub',
-      'playwright.tab.guide': 'Guía de Uso',
       
       // Selenium
       'selenium.title': 'Selenium',
